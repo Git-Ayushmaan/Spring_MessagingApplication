@@ -1,4 +1,4 @@
-package com.example.SpringInitializer.messagingapp;
+package com.example.SpringInitializer.controller;
 
 import com.example.SpringInitializer.dto.UserDTO;
 
