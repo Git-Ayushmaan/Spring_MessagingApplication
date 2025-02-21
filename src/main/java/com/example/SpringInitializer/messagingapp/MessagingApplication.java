@@ -22,5 +22,12 @@ public class MessagingApplication {
     public String greetUser(@RequestBody UserDTO user) {
         return "Hello " + user.getFirstName() + " " + user.getLastName() + " from BridgeLabz";
     }
+    // New PUT endpoint:
+    // URL example: /hello/put/Mark?lastName=Taylor
+    @PutMapping("/hello/put/{firstName}")
+    public String greetUserPut(@PathVariable String firstName, @RequestParam String lastName) {
+        return "Hello " + firstName + " " + lastName + " from BridgeLabz";
+    }
+    //localhost:8080/hello/put/Niketa?lastName=Jain
 }
 
